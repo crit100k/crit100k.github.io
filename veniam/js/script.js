@@ -7,14 +7,19 @@ $(document).ready(function(){
         loop:true,
         items:1,
         autoHeight:false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 8000,
         dots:true,
         smartSpeed:1000,
 		autoplayHoverPause: true,
 		onTranslated: function(event) {
 			console.log(event.page);
+		},
+	responsive: {
+		991: {
+		autoplay: false,
 		}
+	}
         // nav: true,
         // navText:["",""],
         // navClass: ["slider__arrow-left","slider__arrow-right"],
@@ -145,7 +150,7 @@ $(document).ready(function(){
 			991:{
 				items:3,
 				nav:false,
-				dots:true
+				dots:false
 			}
 		}
     });
