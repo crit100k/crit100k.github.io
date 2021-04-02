@@ -16,8 +16,11 @@ $(document).ready(function(){
 			console.log(event.page);
 		},
 	responsive: {
+		0: {
+		autoplay: false
+		}
 		991: {
-		autoplay: false,
+		autoplay: true
 		}
 	}
         // nav: true,
