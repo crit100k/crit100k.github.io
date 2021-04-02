@@ -66,7 +66,6 @@ $(document).ready(function(){
 
 // добавление в корзину
 
-
 // $('.product-preview__label').on('click', '.product-preview__label_active)', function() {
 // 	$(this)
 // 	  .addClass('product-preview__label_active').siblings().removeClass('catalog__tab_active')
@@ -90,7 +89,9 @@ $(document).ready(function(){
 	$('[data-modal="enquire"]').on('click', function() {
 		$('.overlay, #enquire').fadeIn('slow');
 		$("body").addClass("modal-open");
+		
 	});
+
 
 //закрытие форм
 	$('.feedback-form__close').on('click', function() {
@@ -99,7 +100,6 @@ $(document).ready(function(){
 	});
 
 // спойлер
-
   $( "#spoiler" ).click(function(){
 	$( ".contentHide" ).slideToggle();
 	let change = document.getElementById("spoiler");
@@ -148,5 +148,26 @@ $(document).ready(function(){
 			}
 		}
     });
+
 })          
+
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.menu'),
+    menuItem = document.querySelectorAll('.menu_item'),
+    hamburger = document.querySelector('.burger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('burger_active');
+        menu.classList.toggle('menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('burger_active');
+            menu.classList.toggle('menu_active');
+        })
+    })
+})
+
+
 
