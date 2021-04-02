@@ -18,7 +18,7 @@ $(document).ready(function(){
 	responsive: {
 		0: {
 		autoplay: false
-		}
+		},
 		991: {
 		autoplay: true
 		}
