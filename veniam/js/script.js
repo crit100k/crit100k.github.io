@@ -143,7 +143,7 @@ $(document).ready(function(){
 				dots:true
 			},
 			991:{
-				items:2,
+				items:3,
 				nav:false,
 				dots:true
 			}
