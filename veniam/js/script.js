@@ -7,22 +7,14 @@ $(document).ready(function(){
         loop:true,
         items:1,
         autoHeight:false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 8000,
         dots:true,
         smartSpeed:1000,
 		autoplayHoverPause: true,
 		onTranslated: function(event) {
 			console.log(event.page);
-		},
-	responsive: {
-		0: {
-		autoplay: false
-		},
-		991: {
-		autoplay: true
 		}
-	}
         // nav: true,
         // navText:["",""],
         // navClass: ["slider__arrow-left","slider__arrow-right"],
@@ -87,24 +79,23 @@ $(document).ready(function(){
 			event.target.classList.add('product-preview__label_active');
 		}
 	});
-	
-
-
 
 
   // появление форм
 	$('[data-modal="callback"]').on('click', function() {
 		$('.overlay, #callback').fadeIn('slow');
-	
+		$("body").addClass("modal-open");
 	});
 
 	$('[data-modal="enquire"]').on('click', function() {
 		$('.overlay, #enquire').fadeIn('slow');
+		$("body").addClass("modal-open");
 	});
 
 //закрытие форм
 	$('.feedback-form__close').on('click', function() {
 		$('.overlay, #callback, #enquire').fadeOut('slow');
+		$("body").removeClass("modal-open");
 	});
 
 // спойлер
