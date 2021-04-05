@@ -89,9 +89,7 @@ $(document).ready(function(){
 	$('[data-modal="enquire"]').on('click', function() {
 		$('.overlay, #enquire').fadeIn('slow');
 		$("body").addClass("modal-open");
-		
 	});
-
 
 //закрытие форм
 	$('.feedback-form__close').on('click', function() {
@@ -160,6 +158,7 @@ window.addEventListener('DOMContentLoaded', () => {
         hamburger.classList.toggle('burger_active');
         menu.classList.toggle('menu_active');
     });
+	
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
