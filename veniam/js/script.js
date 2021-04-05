@@ -128,21 +128,25 @@ $(document).ready(function(){
 		dotsClass: "hits-dots",
         smartSpeed:1000,
 		margin:10,
+		mouseDrag: true,
 		responsive: {
 			0:{
 				items:1,
 				dots:true,
-				loop:true
+				loop:true,
+				mouseDrag: true
 			},
 			575:{
 				items:2,
 				nav:false,
-				dots:true
+				dots:true,
+				mouseDrag: true
 			},
 			991:{
 				items:3,
 				nav:false,
-				dots:false
+				dots:false,
+				mouseDrag: true
 			}
 		}
     });
