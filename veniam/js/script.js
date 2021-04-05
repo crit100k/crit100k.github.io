@@ -7,7 +7,7 @@ $(document).ready(function(){
         loop:true,
         items:1,
         autoHeight:false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 8000,
         dots:true,
         smartSpeed:1000,
@@ -128,7 +128,7 @@ $(document).ready(function(){
 		dotsClass: "hits-dots",
         smartSpeed:1000,
 		margin:10,
-		mouseDrag: true,
+		mouseDrag: false,
 		responsive: {
 			0:{
 				items:1,
@@ -142,12 +142,13 @@ $(document).ready(function(){
 				dots:true,
 				mouseDrag: true
 			},
-			991:{
+			1000:{
 				items:3,
 				nav:false,
 				dots:false,
-				mouseDrag: true
+				mouseDrag: false
 			}
+
 		}
     });
 
